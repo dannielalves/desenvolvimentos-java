@@ -16,8 +16,6 @@ public class Exercicio_02 {
 			System.out.println("Você é maior de idade.");
 		}
 		
-		
-		
 		sc.close();
 	}
 

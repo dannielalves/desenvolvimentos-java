@@ -12,7 +12,7 @@ public class Exercicio_03 {
 		idade = sc.nextInt();
 		if(idade<0) {
 			System.out.println("Idade inválida!");
-		} else if(idade >= 0 && idade <18) {
+		} else if(idade >= 0 && idade <18) { //Nessa condição podemos apneas por 'idade<18'
 			System.out.println("Você é menor de idade.");
 		} else {
 			System.out.println("Você é maior de idade.");

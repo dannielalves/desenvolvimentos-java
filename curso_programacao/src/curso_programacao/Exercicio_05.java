@@ -12,7 +12,6 @@ public class Exercicio_05 {
 
 		String operacao;
 
-		double resultado = 0;
 
 		boolean operacaoValida = true;
 
@@ -26,7 +25,8 @@ public class Exercicio_05 {
 
 		while(condicao) {
 				
-				operacaoValida = true;					
+				operacaoValida = true;	
+				double resultado = 0;
 				
 				System.out.printf("%n¬¬¬¬¬¬¬¬¬CALCULADORA¬¬¬¬¬¬¬¬¬¬%n");
 
@@ -107,7 +107,6 @@ public class Exercicio_05 {
 				resposta = sc.next();
 
 				if(resposta.equalsIgnoreCase("s")) { //if(resposta.equals("s") || resposta.equals("S")) {
-					clear();
 					condicao = true;
 
 				} else {
@@ -126,9 +125,6 @@ public class Exercicio_05 {
 
 	}
 
-	private static void clear() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }

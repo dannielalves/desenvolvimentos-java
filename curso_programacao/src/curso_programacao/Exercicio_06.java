@@ -13,9 +13,9 @@ public class Exercicio_06 {
 		String operacao;
 
 
-		boolean operacaoValida = true;
+		
 
-		// Quero que você construa uma calculadora que execute as quatro operações matemáticas.
+		// Quero que você tente reescrever sua calculadora utilizando do-while em vez de while.
 
 		Scanner sc = new Scanner(System.in);
 
@@ -23,9 +23,9 @@ public class Exercicio_06 {
 
 		String resposta;
 
-		while(condicao) {
+		do {
 				
-				operacaoValida = true;	
+			boolean operacaoValida = true;	
 				double resultado = 0;
 				
 				System.out.printf("%n¬¬¬¬¬¬¬¬¬CALCULADORA¬¬¬¬¬¬¬¬¬¬%n");
@@ -119,7 +119,7 @@ public class Exercicio_06 {
 
 				
 
-			}
+			} while(condicao);
 
 		sc.close();
 

@@ -1,4 +1,5 @@
 package curso_programacao;
+
 //testetv986534
 import java.util.Scanner;
 
@@ -12,114 +13,110 @@ public class Exercicio_06 {
 
 		String operacao;
 
-
-		
-
-		// Quero que você tente reescrever sua calculadora utilizando do-while em vez de while.
+		// Quero que você tente reescrever sua calculadora utilizando do-while em vez de
+		// while.
 
 		Scanner sc = new Scanner(System.in);
 
-		boolean condicao=true;
+		boolean condicao = true;
 
 		String resposta;
 
 		do {
-				
-			boolean operacaoValida = true;	
-				double resultado = 0;
-				
-				System.out.printf("%n¬¬¬¬¬¬¬¬¬CALCULADORA¬¬¬¬¬¬¬¬¬¬%n");
 
-				System.out.print("Primeiro número: ");
+			boolean operacaoValida = true;
+			double resultado = 0;
 
-				primeiro_numero = sc.nextDouble();
+			System.out.printf("%n¬¬¬¬¬¬¬¬¬CALCULADORA¬¬¬¬¬¬¬¬¬¬%n");
 
-				System.out.print("Segundo número: ");
+			System.out.print("Primeiro número: ");
 
-				segundo_numero = sc.nextDouble();
+			primeiro_numero = sc.nextDouble();
 
-				System.out.printf("Escolha a operação:%n+ Adição%n- Subtração%n* Multiplicação%n/ Divisão%n");
+			System.out.print("Segundo número: ");
 
-				System.out.print("Operação: ");
+			segundo_numero = sc.nextDouble();
 
-				operacao = sc.next();
+			System.out.printf("Escolha a operação:%n+ Adição%n- Subtração%n* Multiplicação%n/ Divisão%n");
 
-				switch (operacao) {
+			System.out.print("Operação: ");
 
-			    case "+":
+			operacao = sc.next();
 
-			        resultado = primeiro_numero + segundo_numero;
+			switch (operacao) {
 
-			        break;
+			case "+":
 
-			    case "-":
+				resultado = primeiro_numero + segundo_numero;
 
-			        // Código da subtração
+				break;
 
-			    	resultado = primeiro_numero - segundo_numero;
+			case "-":
 
-			        break;
+				// Código da subtração
 
-			    case "*":
+				resultado = primeiro_numero - segundo_numero;
 
-			        // Código da multiplicação
+				break;
 
-			    	resultado = primeiro_numero * segundo_numero;
+			case "*":
 
-			        break;
+				// Código da multiplicação
 
-			    case "/":
+				resultado = primeiro_numero * segundo_numero;
 
-			        // Código da divisão
+				break;
 
-		            if (segundo_numero != 0) {
+			case "/":
 
-		                resultado = primeiro_numero / segundo_numero;
+				// Código da divisão
 
-		            } else {
+				if (segundo_numero != 0) {
 
-		                System.out.println("Erro: divisão por zero!");
-
-		                operacaoValida = false;
-
-		            }	    	
-
-			        break;	        
-
-			    default:
-
-			        // Operação inválida
-
-			    	System.out.println("Operação inválida!");
-
-			    	operacaoValida = false;
-
-			}
-
-				if (operacaoValida) {
-
-				System.out.printf("%nResultado: %.2f", resultado);
-
-				}
-
-				System.out.printf("%nDeseja realizar outra operação? (S/N)%n");
-
-				resposta = sc.next();
-
-				if(resposta.equalsIgnoreCase("s")) { //if(resposta.equals("s") || resposta.equals("S")) {
-					condicao = true;
+					resultado = primeiro_numero / segundo_numero;
 
 				} else {
 
-					condicao = false;
+					System.out.println("Erro: divisão por zero!");
 
-				System.out.println("Programa encerrado");
+					operacaoValida = false;
 
 				}
 
-				
+				break;
 
-			} while(condicao);
+			default:
+
+				// Operação inválida
+
+				System.out.println("Operação inválida!");
+
+				operacaoValida = false;
+
+			}
+
+			if (operacaoValida) {
+
+				System.out.printf("%nResultado: %.2f", resultado);
+
+			}
+
+			System.out.printf("%nDeseja realizar outra operação? (S/N)%n");
+
+			resposta = sc.next();
+
+			if (resposta.equalsIgnoreCase("s")) { // if(resposta.equals("s") || resposta.equals("S")) {
+				condicao = true;
+
+			} else {
+
+				condicao = false;
+
+				System.out.println("Programa encerrado");
+
+			}
+
+		} while (condicao);
 
 		sc.close();
 

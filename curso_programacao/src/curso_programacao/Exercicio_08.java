@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Scanner;
 
 public class Exercicio_08 {
-
+	//versão01
 	public static void main(String[] args) {
 		/*
 		 Uma operadora de telefonia cobra R$ 50,00 por um plano básico
